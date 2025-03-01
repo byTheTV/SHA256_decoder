@@ -8,18 +8,9 @@ A C++ SHA256 implementation.
 
 Just run `make all`. There are no dependencies.
 
-## ⚠️ DISCLAIMER
-
-This library has been developed for research and learning purposes. It **has not been audited** for security nor compliance with the standard. It is not advised to use it in projects where security is important. Use wide-spread and reliable libraries such as [OpenSSL](https://www.openssl.org/) instead.
-
-## Example usage
-
-### Sample program
-
-Provide as many strings as you want. The program will hash all of them in order.
-
 ```
-$ ./SHA256 "string" "string2"
+$ ./SHA256 "string"
+$ ./SHA256 --bruteforce
 473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8
 b993212a26658c9077096b804cdfb92ad21cf1e199e272c44eb028e45d07b6e0
 ```
@@ -37,20 +28,4 @@ sha.update(s);
 std::array<uint8_t, 32> digest = sha.digest();
 
 std::cout << SHA256::toString(digest) << std::endl;
-```
-
-## Using tipi.build to install SHA256
-
-`SHA256` can be easily used with the [tipi.build](https://tipi.build) dependency manager, by adding the following to a `.tipi/deps`:
-
-```json
-{
-    "System-Glitch/SHA256": { }
-}
-```
-
-An example to try is available in `https://github.com/tipi-deps/example-System-Glitch-SHA256` (change the target name appropriately to `linux` or `macos` or `windows`):
-
-```bash
-tipi . -t <target>
 ```
