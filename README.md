@@ -1,4 +1,6 @@
-# SHA256
+# SHA256 decoder
+
+!! Not Ended !!!
 
 A C++ SHA256 implementation.
 
