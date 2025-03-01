@@ -12,6 +12,7 @@ Just run `make all`. There are no dependencies.
 $ ./SHA256 "string"
 $ ./SHA256 --bruteforce
 ```
+in bin ofc
 
 ### As a library
 
