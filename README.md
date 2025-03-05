@@ -2,8 +2,6 @@
 
 !! Not Ended !!!
 
-A C++ SHA256 implementation.
-
 ## Build
 
 **Minimum C++11.**
